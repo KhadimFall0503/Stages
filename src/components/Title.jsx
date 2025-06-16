@@ -5,9 +5,10 @@ function Title({ text, level = 2, className = "" }) {
 
   return (
     <Tag
-      className={`fw-bold text-primary text-center mb-4 display-5 ${className}`}
+      className={`title-underline fw-bold text-primary mb-4 fs-1 text-uppercase ${className}`}
     >
-      {text}
+      <span className="title-text">{text}</span>
+      <span className="title-line"></span>
     </Tag>
   );
 }

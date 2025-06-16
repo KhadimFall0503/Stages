@@ -40,7 +40,7 @@ function Footer() {
               </li>
               <li>
                 <a href="#offres" className="text-white text-decoration-none">
-                  Offres
+                  A propos
                 </a>
               </li>
               <li>
@@ -48,12 +48,22 @@ function Footer() {
                   href="#candidatures"
                   className="text-white text-decoration-none"
                 >
-                  Candidatures
+                  Vous etes
                 </a>
               </li>
               <li>
                 <a href="#faq" className="text-white text-decoration-none">
-                  FAQ
+                  Admin
+                </a>
+              </li>
+              <li>
+                <a href="#faq" className="text-white text-decoration-none">
+                  Enseignant
+                </a>
+              </li>
+              <li>
+                <a href="#faq" className="text-white text-decoration-none">
+                  Etudiant
                 </a>
               </li>
             </ul>

@@ -1,0 +1,94 @@
+.contact-grid {
+  display: flex;
+  gap: 0; /* pas d’espace entre image et formulaire */
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 8px;
+  overflow: hidden; /* pour que arrondis s’appliquent sur les enfants */
+  box-shadow: 0 4px 15px rgb(0 0 0 / 0.1);
+}
+
+.contact-image {
+  flex: 1;
+  overflow: hidden;
+}
+
+.contact-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.contact-image img:hover {
+  transform: scale(1.05);
+}
+
+.contact-form {
+  flex: 1;
+  background-color: #fff;
+  padding: 3rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-form .form-label {
+  font-weight: 600;
+  color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  margin-top: 0.3rem;
+  margin-bottom: 1.5rem;
+  border: 1.5px solid #ced4da;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  font-family: inherit;
+  resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #0d6efd; /* bootstrap primary */
+  box-shadow: 0 0 6px rgb(13 110 253 / 0.5);
+  outline: none;
+}
+
+.contact-form button {
+  align-self: flex-start;
+  padding: 0.75rem 2rem;
+  background-color: #0d6efd;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #084cd3;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-grid {
+    flex-direction: column;
+    max-width: 100%;
+  }
+  .contact-image,
+  .contact-form {
+    flex: none;
+    width: 100%;
+  }
+  .contact-form {
+    padding: 2rem 1.5rem;
+  }
+}
