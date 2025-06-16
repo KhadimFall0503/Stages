@@ -7,6 +7,7 @@ import About from "./components/About";
 import Temoignages from "./components/Temoignages";
 import Faq from "./components/Faq";
 import Footer from "./components/Footer";
+import Stage from "./components/Stage";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Navbar />
       <Hero />
       <About />
+      <Stage />
       <Candidatures />
       <Partenaires />
       <Temoignages />
