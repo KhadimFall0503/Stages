@@ -1,4 +1,5 @@
 import { FaBuilding, FaCalendarAlt } from "react-icons/fa";
+import Title from "./Title";
 
 function Candidatures() {
   const candidatures = [
@@ -34,9 +35,7 @@ function Candidatures() {
   return (
     <section className="py-5 bg-light" id="candidatures">
       <div className="container">
-        <h2 className="mb-5 fw-bold text-center text-primary">
-          Mes candidatures récentes
-        </h2>
+        <Title text="Mes Candidatures" level={2} className="mb-5" />
         <div className="row g-4 justify-content-center">
           {candidatures.map(({ id, stage, entreprise, date, statut }) => (
             <div key={id} className="col-sm-12 col-md-6 col-lg-4">

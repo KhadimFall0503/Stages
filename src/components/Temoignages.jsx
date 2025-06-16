@@ -1,4 +1,5 @@
 import "../style/Temoignages.css";
+import Title from "./Title";
 
 const testimonials = [
   {
@@ -28,9 +29,11 @@ function Temoignages() {
   return (
     <section className="temoignages-section py-5">
       <div className="container">
-        <h2 className="temoignages-title text-center mb-5">
-          Ce que disent nos utilisateurs
-        </h2>
+        <Title
+          text="Ce que disent nos utilisateurs"
+          level={2}
+          className="mb-5"
+        />
         <div className="temoignages-list">
           {testimonials.map(({ id, name, role, photo, text }) => (
             <div key={id} className="temoignage-card">

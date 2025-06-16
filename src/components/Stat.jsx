@@ -1,11 +1,12 @@
 import "../style/Stat.css";
+import Title from "./Title";
 import { FaBriefcase, FaUsers, FaBuilding } from "react-icons/fa";
 
 function Stats() {
   return (
     <section className="py-5 bg-light text-center">
       <div className="container">
-        <h2 className="mb-4 fw-bold text-primary">Nos statistiques clés</h2>
+        <Title text="Statistiques" level={2} className="mb-4" />
         <p className="text-muted mb-5">
           Une plateforme fiable et utilisée par de nombreuses personnes.
         </p>

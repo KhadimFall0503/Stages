@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../style/Faq.css";
+import Title from "./Title";
 
 const faqData = [
   {
@@ -34,10 +35,8 @@ function Faq() {
   return (
     <section className="faq-section py-5 bg-light" id="faq">
       <div className="container">
-        <h2 className="text-center mb-5 fw-bold text-primary">
-          Foire aux Questions
-        </h2>
-        <div className="faq-list">
+        <Title text="Foire aux questions" level={2} className="mb-5" />
+        <div className="faq-list border p-4 border-primary">
           {faqData.map(({ question, answer }, index) => {
             const isActive = activeIndex === index;
             return (

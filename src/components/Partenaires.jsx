@@ -1,4 +1,5 @@
 import React from "react";
+import Title from "./Title";
 import partner1 from "../assets/partner1.jpg";
 import "../style/Partenaires.css"; // fichier CSS séparé
 
@@ -13,7 +14,7 @@ function Partenaires() {
   return (
     <section className="partners-section">
       <div className="partners-container">
-        <h2 className="partners-title">Nos partenaires</h2>
+        <Title text="Nos Partenaires" level={2} className="text-center mb-4" />
         <p className="partners-description">
           Nous collaborons avec des entreprises reconnues pour offrir les
           meilleures opportunités.
