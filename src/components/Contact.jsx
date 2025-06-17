@@ -5,7 +5,7 @@ import Title from "./Title";
 
 function Contact() {
   return (
-    <section className="py-5 bg-light">
+    <section className="py-5 bg-light" id="contact">
       <div className="container">
         <Title
           text="Contactez-nous"

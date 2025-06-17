@@ -1,4 +1,5 @@
 import React from "react";
+// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import "../style/About.css";
 import teamImage from "../assets/team.jpg";
@@ -6,7 +7,7 @@ import Title from "./Title";
 
 function About() {
   return (
-    <section className="apropos-section py-5 bg-light">
+    <section className="apropos-section py-5 bg-light" id="about">
       <div className="container">
         <div className="row align-items-center g-5">
           {/* Image à gauche avec animation */}

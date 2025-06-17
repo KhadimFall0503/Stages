@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 function Hero() {
   return (
-    <section className="hero-section position-relative text-white">
+    <section className="hero-section position-relative text-white" id="hero">
       {/* Overlay sombre */}
       <div className="hero-overlay"></div>
 
